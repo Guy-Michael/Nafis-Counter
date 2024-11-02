@@ -17,7 +17,7 @@ window.onload = () => {
 	for(let i = 0; i < array.length; i++) {
 		console.log(array[i]);
 		const dateDiv = document.createElement("div");
-		const content =  new Date(array[i] - 1).toLocaleDateString('heb-IL') + ': ❌';
+		const content =  new Date(array[i]).toLocaleDateString('heb-IL') + ': ❌';
 		dateDiv.textContent = content
 		datesDiv.appendChild(dateDiv);
 	}
